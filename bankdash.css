@@ -1,0 +1,222 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0b0b0b;
+    color: #333;
+}
+
+header {
+    background-color: #3c0101;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 8%;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.logout {
+    margin-left: 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.logout:hover {
+    background-color: #c82333;
+}
+
+nav {
+    background-color: #3c0101;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(231, 142, 8);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(75, 74, 74, 0.516);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: orange;
+    margin-top: 0;
+    border-bottom: 2px solid #3c0101;
+    padding-bottom: 10px;
+}
+
+p {
+    color: #007BFF;
+}
+
+.balance-amount {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007BFF;
+    text-align: center;
+}
+
+.quick-actions .button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.quick-actions button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quick-actions button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    color: antiquewhite;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    color: #007BFF;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f1f1;
+}
+
+footer {
+    background-color: #3c0101;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    /* Hide navigation on mobile phones */
+    nav {
+        display: none;
+    }
+
+    .logo img {
+        width: 15%; /* Adjust logo size for mobile */
+    }
+
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .user-info {
+        margin-top: 10px; /* Space between logo and user info */
+    }
+
+    main {
+        padding: 10px; /* Less padding for small screens */
+    }
+
+    .card {
+        padding: 15px; /* Less padding for small screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller font for headings */
+    }
+
+    .balance-amount {
+        font-size: 24px; /* Smaller font size */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    nav ul {
+        flex-wrap: wrap; /* Allow wrapping for tablets */
+    }
+
+    .card {
+        padding: 15px; /* Less padding for medium screens */
+    }
+
+    h2 {
+        font-size: 1.75rem; /* Medium font size for headings */
+    }
+}
+
+@media (min-width: 901px) {
+    .card {
+        padding: 20px; /* Default padding for larger screens */
+    }
+
+    h2 {
+        font-size: 2rem; /* Default font size for headings */
+    }
+}

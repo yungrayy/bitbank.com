@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./assets/images/images.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(0, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+label {
+    display: block;
+    margin: 8px 0 4px;
+    font-weight: bold;
+}
+
+select, input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.already-account {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.already-account p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.already-account a {
+    color: #fff;
+}
+
+@media (max-width: 480px) { /* Mobile phones */
+    .container {
+        padding: 10px;
+        max-width: 90%; /* Full width on small screens */
+    }
+
+    h1 {
+        font-size: 24px; 
+    }
+}
+
+@media (max-width: 768px) { /* Tablets */
+    .container {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1024px) { /* Laptops */
+    .container {
+        max-width: 70%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) { /* Foldable phones */
+    .container {
+        max-width: 90%;
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 26px; 
+    }
+}
+
+
+

@@ -1,0 +1,8 @@
+savings:Jamie Rob:jamie@gmail.com:234987654321:4444/nbusiness:Daniel Evans:daniele@gmail.com:123498765:
+business:Daruis dDavid:dariuse@gmail.com:123498765:2345
+savings:Jamie Rob:jamie@gmail.com:2348765:pass
+savings:John Snow:jsnow@gmail.com:23412345:password
+checking:John Snoww:jsnoww@gmail.com:23412345:pass
+checking:David Jay:davidj@gmail.com:1122334455:david
+checking:Lamar Dee:deelamar@gmail.com:22334455667788:lamar
+savings:Mike K:mike@gmail.com:1122334455:passs
